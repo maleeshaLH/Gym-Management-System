@@ -1,13 +1,21 @@
 import './App.css'
-import {Header} from "./components/Header/Header.tsx";
+import {HeaderComponent} from "./components/HeaderComponent.tsx";
+import WhyUsComponents from "./components/WhyUsComponents.tsx";
+// import {createBrowserRouter} from "react-router";
 
 function App() {
 
+    // const router = createBrowserRouter([
+    //     {
+    //         path: "/",
+    //     }
+    // ])
 
   return (
-    <>
-<Header />
-    </>
+      <>
+          <HeaderComponent />
+          <WhyUsComponents />
+      </>
   )
 }
 
