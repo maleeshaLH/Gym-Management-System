@@ -1,55 +1,54 @@
-<<<<<<< HEAD
-# Gym-Management-System
-Gym Management System simplifies gym operations by managing memberships, attendance, payments, and scheduling. It automates tasks, tracks progress, and enhances staff-client communication. Ideal for gyms of all sizes, it boosts efficiency, reduces manual work, and ensures a seamless fitness experience. 💪
-=======
-# React + TypeScript + Vite
+# Gym Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+The Gym Management System is a web application built using React to streamline gym operations, including membership management, class scheduling, and attendance tracking.
 
-Currently, two official plugins are available:
+## Features
+- User authentication (Contact)
+- Contact registration and management
+- Class scheduling and booking
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+-  React.js
+-  React Router
+-  Tailwind CSS 
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/maleeshaLH/Gym-Management-System.git
+   ```
+2. Navigate to the project folder:
+   ```sh
+   cd gym-management-system
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
+4. Start the development server:
+   ```sh
+   npm start
+   ```
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Folder Structure
+```
+├── src
+│   ├── components  # Reusable UI components
+│   ├── roots       # Store Roots
+│   ├── assets      # Images and icons
+│   ├── App.js      # Main application file
+│   ├── index.js    # Entry point
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Screenshot
+![Gym Management System](src/assets/Readme image.png)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Contributing
+If you'd like to contribute, feel free to submit a pull request. Ensure all changes are properly tested before submission.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
->>>>>>> 5a886f4 (create gym project)
+## License
+This project is licensed under the MIT License.
+
