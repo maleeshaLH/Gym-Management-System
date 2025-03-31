@@ -44,7 +44,7 @@ The Gym Management System is a web application built using React to streamline g
 ```
 
 ## Screenshot
-![Gym Management System](src/assets/Readme image.png)
+![Gym Management System](src/assets/Readme%20image.png)
 
 ## Contributing
 If you'd like to contribute, feel free to submit a pull request. Ensure all changes are properly tested before submission.
