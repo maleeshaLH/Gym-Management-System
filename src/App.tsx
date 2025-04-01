@@ -1,30 +1,23 @@
 import './App.css'
-import {HeaderComponent} from "./components/HeaderComponent.tsx";
-import WhyUsComponents from "./components/WhyUsComponents.tsx";
-import {HealthyMindBody} from "./components/HealthyMindBode.tsx";
-import {GymTrainers} from "./components/GymTrainers.tsx";
-import {ContactUs} from "./components/ContactUs.tsx";
-import Footer from "./components/Footer.tsx";
-import {HomeComponent} from "./components/HomeComponent.tsx";
-// import {createBrowserRouter} from "react-router";
+import {Route, Routes} from "react-router-dom";
+import {HomeRoot} from "./roots/HomeRoot.tsx";
+import {WhyUsRoot} from "./roots/WhyUsRoot.tsx";
+import {TrainersRoot} from "./roots/TrainersRoot.tsx";
+import {ContactRoot} from "./roots/ContactRoot.tsx";
+
 
 function App() {
 
-    // const router = createBrowserRouter([
-    //     {
-    //         path: "/",
-    //     }
-    // ])
-
   return (
       <>
-          <HeaderComponent />
-          <HomeComponent/>
-          <WhyUsComponents />
-          <HealthyMindBody />
-          <GymTrainers/>
-          <ContactUs/>
-          <Footer/>
+              <Routes>
+                  <Route path="/" element={<HomeRoot />} />
+                  <Route path="/why" element={<WhyUsRoot />} />
+                  <Route path="/Trainers" element={<TrainersRoot />} />
+                  <Route path="/contact" element={<ContactRoot />} />
+
+              </Routes>
+
       </>
   )
 }

@@ -1,3 +1,4 @@
+      import {Link} from "react-router-dom";
 
 export const HeaderComponent = () => {
 
@@ -29,15 +30,15 @@ export const HeaderComponent = () => {
                 items-center z-40 bg-transparent border border-transparent
                 shadow-md shadow-black/25 backdrop-blur-xl text-[#fefefe] m-0 ">
 
-                <a href="#" className="p-6 pb-2 pr-10 pl-10 text-2xl  font-semibold cursor-default animate-slideRight ">
-                    FitGym</a>
+                <Link to="#" className="p-6 pb-2 pr-10 pl-10 text-2xl  font-semibold cursor-default animate-slideRight ">
+                    FitGym</Link>
 
                 <nav
                     className="flex gap-4 p l-7 items-center justify-between px-4 py-2 flex items-center justify-between">
-                    <a href="#" className=" gap-1.5">HOME</a>
-                    <a href="#">WHY US</a>
-                    <a href="">TRAINERS</a>
-                    <a href="">CONTACT US</a>
+                    <Link to="/" className=" gap-1.5">HOME</Link>
+                    <Link to="/why">WHY US</Link>
+                    <Link to="/Trainers">TRAINERS</Link>
+                    <Link to="/contact">CONTACT US</Link>
 
                 </nav>
             </header>
